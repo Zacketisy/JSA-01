@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Buoi 5 </title>
+
+<body>
+
+
+    <div class="container">
+        <!-- Menu -->
+        <div class="top-menu">
+            <img src="./images/logo.png" alt="logo">
+
+            <div class="page">
+                <a href="#">SẢN PHẨM</a>
+                <a href="#">SALE</a>
+                <a href="#">THƯ VIỆN</a>
+                <a href="#">GIỚI THIỆU</a>
+            </div>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="login.html">
+                    <i class="fa-solid fa-user" id="users"></i>
+                </a>
+                <div class="lines"></div>
+                <i class="fa-solid fa-globe"></i>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div class="main">
+
+            <!-- Render Product -->
+            <div class="product">
+                <div class="selectors"> 
+                <a href="#" class="highlights"> Deck </a>
+                <a href="#"> Accessories</a>
+                <a href="#"> Clothing</a>
+                <a href="#"> S/S 2021 </a>
+                <a href="#"> S/S 2022 </a>
+                <a href="#"> S/S 2023 </a>
+                <a href="#"> All </a>
+                </div>
+                <div id="products"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- Login -->
+
+    <div class="container">
+        <div class="todo">
+
+            <h1>Login</h1>
+            <h3>Please fill in this form to enter your account.</h3>
+            <hr>
+
+            <form id="form">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" id="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="psw" required>
+
+                <button type="submit" id="submit" class="register">Register</button>
+            </form>
+            <hr>
+        </div>
+    </div>
+
+
+    <style>
+
+        /* Login */
+        * {
+            box-sizing: border-box
+        }
+
+
+        .container {
+            padding: 16px;
+        }
+
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .register {
+            background-color: black;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .register:hover {
+            opacity: 1;
+        }
+
+
+        a {
+            color: dodgerblue;
+        }
+
+
+        .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+    </style>
+    
+</body>

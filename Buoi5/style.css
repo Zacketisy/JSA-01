@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.top-menu {
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: white;
+    padding: 15px 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-menu .page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+}
+
+.top-menu .icon {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.top-menu .icon i {
+    padding: 0 15px;
+}
+
+.lines {
+    border-right: 1px solid white;
+    height: 20px;
+}
+
+.selectors a {
+    color: rgba(86, 86, 86);
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.selectors {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.highlights {
+    color: black !important;
+    border-bottom: 3px solid black;
+}
+
+#products {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    padding: 2.5em 0;
+}
+  
+#products .card .img-container {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+
+#products .card .container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+#products .card .container h5 {
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+#products .card .container h6 {
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+#products .card .container button{
+    background-color: white;
+    border: none;
+    border: solid 1px black;
+    margin-top: 14px;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+}
+
+#products .card .container button:hover{
+    background-color: black;
+    color: white;
+}
